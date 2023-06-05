@@ -35,7 +35,7 @@
 
       <div class="navbar-extra">
         <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="shoping-cart"><i data-feather="shopping-cart"></i></a>
+        <!-- <a href="checkout.php" id="shoping-cart"><i data-feather="shopping-cart"></i></a> -->
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
     </nav>
@@ -46,8 +46,8 @@
       <main class="content">
         <h1>Pipom Drink <span>Thaitea</span></h1>
         <p>
-          Pipom Drink merupakan salah satu <br />minuman segar yang nyaman
-          dikantong dan segar dimulut.
+          Pipom Drink merupakan salah satu <br>minuman segar yang nyaman <br>dikantong
+          dan segar dimulut.
         </p>
         <a href="#" class="cta">Beli Sekarang</a>
       </main>
@@ -96,7 +96,7 @@
         <div class="Menu-card">
           <img src="file/<?php echo $row['foto'] ; ?>" />
           <h3 class="Menu-card-title"><?php echo $row['nama'] ; ?></h3>
-          <a class="Menu-card-price"><?php echo $row['harga'] ; ?></a>
+          <a href="checkout.php?id=<?php echo $row['id'] ; ?>" class="Menu-card-price"><?php echo $row['harga'] ; ?></a>
         </div>
         <?php } ?>
       </div>
@@ -130,7 +130,7 @@
             <i data-feather="phone"></i>
             <input type="text" placeholder="no Whatsapp" />
           </div>
-          <button type="submit" class="btn">Kirim pesan</button>
+          <a href="https://wa.me/6288223363160" class="btn">Kirim pesan</a>
         </form>
       </div>
     </section>
@@ -140,7 +140,7 @@
     <!-- Footer start-->
     <footer>
       <div class="socials">
-        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="https://www.instagram.com/pipomdrinks"><i data-feather="instagram"></i></a>
         <a href="#"><i data-feather="phone-outgoing"></i></a>
       </div>
 
@@ -152,7 +152,7 @@
       </div>
 
       <div class="credit">
-        <p>Created by <a href="">Samuel Restu Putra</a>. | &copy; 2023.</p>
+        <p>Created by <a href="">Samuel Restu Putra & Muhammad Hilmi Assidiqi</a>. | &copy; 2023.</p>
       </div>
     </footer>
     <!-- Footer end-->
